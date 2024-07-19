@@ -13,7 +13,7 @@ export const ContextProvider = ({ children }) => {
   const [notesData,setNotes] = useState([])
   const [archieveData,setArchieveData] = useState([])
 
-  let url = "https://notes-backend-sx63.onrender.com/auth";
+  let url = "https://apsona-notes-app.onrender.com/auth";
 
   useEffect(()=>{
 

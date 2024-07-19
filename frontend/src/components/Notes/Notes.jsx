@@ -32,7 +32,7 @@ const Notes = () => {
 
   useEffect(() => {
     const getNotes = async () => {
-      const url = "https://notes-backend-sx63.onrender.com/notes";
+      const url = "https://apsona-notes-app.onrender.com/notes";
       try {
         const response = await axios.get(url, {
           headers: { Authorization: `Bearer ${token}` }
@@ -76,7 +76,7 @@ const Notes = () => {
     };
 
     try {
-      const response = await axios.post('https://notes-backend-sx63.onrender.com/notes', newNote, {
+      const response = await axios.post('https://apsona-notes-app.onrender.com/notes', newNote, {
         headers: { Authorization: `Bearer ${token}` }
       });
 
@@ -98,7 +98,7 @@ const Notes = () => {
   };
 
   const onClickArchieve = async (id) => {
-    const url = `https://notes-backend-sx63.onrender.com/notes/${id}/archive`;
+    const url = `https://apsona-notes-app.onrender.com/notes/${id}/archive`;
     try {
       await axios.post(url, {
         headers: { Authorization: `Bearer ${token}` }
@@ -109,7 +109,7 @@ const Notes = () => {
   };
 
   const moveToBin = async (id) => {
-    const url = `https://notes-backend-sx63.onrender.com/notes/${id}/bin`;
+    const url = `https://apsona-notes-app.onrender.com/notes/${id}/bin`;
     try {
       const response = await axios.post(url, {}, {
         headers: { Authorization: `Bearer ${token}` }
@@ -132,7 +132,7 @@ const Notes = () => {
   };
 
   const updateNoteBackground = async (id, color) => {
-    const url = `https://notes-backend-sx63.onrender.com/notes/${id}`;
+    const url = `https://apsona-notes-app.onrender.com/notes/${id}`;
     try {
       await axios.patch(url, { backgrounds: color }, {
         headers: { Authorization: `Bearer ${token}` }

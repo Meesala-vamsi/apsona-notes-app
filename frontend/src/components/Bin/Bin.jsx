@@ -8,7 +8,7 @@ const Bin=()=>{
   const {token} = useContext(ReactContext)
   useEffect(()=>{
     const getDeletedData =async()=>{
-      const url ="https://notes-backend-sx63.onrender.com/notes/bin"
+      const url ="https://apsona-notes-app.onrender.com/notes/bin"
       await axios.get(url,{
         headers:{
           Authorization:`Bearer ${token}`

@@ -10,7 +10,7 @@ const Archieve = () => {
 
   useEffect(() => {
     const getArchivedData = async () => {
-      const url = "https://notes-backend-sx63.onrender.com/notes/archive";
+      const url = "https://apsona-notes-app.onrender.com/notes/archive";
       try {
         const response = await axios.get(url, {
           headers: { Authorization: `Bearer ${token}` }
@@ -35,7 +35,7 @@ const Archieve = () => {
   };
 
   const deleteNote = async (id) => {
-    const url = `https://notes-backend-sx63.onrender.com/notes/${id}`;
+    const url = `https://apsona-notes-app.onrender.com/notes/${id}`;
     try {
       await axios.delete(url, {
         headers: { Authorization: `Bearer ${token}` }
@@ -48,7 +48,7 @@ const Archieve = () => {
   };
 
   const onClickUnArchieve = async (id) => {
-    const url = `https://notes-backend-sx63.onrender.com/notes/${id}/unarchive`;
+    const url = `https://apsona-notes-app.onrender.com/notes/${id}/unarchive`;
     try {
       const response = await axios.post(url, {}, {
         headers: { Authorization: `Bearer ${token}` }

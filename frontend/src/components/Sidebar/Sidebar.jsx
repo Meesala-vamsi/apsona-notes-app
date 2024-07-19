@@ -15,7 +15,7 @@ const Sidebar = ({ isVisible }) => {
     setSelectedOption(option);
 
     if (option === "Notes") {
-      const url = "https://notes-backend-sx63.onrender.com/notes";
+      const url = "https://apsona-notes-app.onrender.com/notes";
       await axios.get(url, {
         headers: {
           Authorization: `Bearer ${token}`
