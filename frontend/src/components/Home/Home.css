@@ -1,0 +1,8 @@
+.home-container{
+  display: flex;
+  gap: 20px;
+}
+
+.heading{
+  width: 100%;
+}
